@@ -6,8 +6,8 @@ import time
 import os
 
 database_name = 'corteva_database.db'
-weather_dirc = r'C:\Users\moufi\Desktop\Corteva Project\remaster\Testing Folder'
-yield_dirc = r'C:\Users\moufi\Desktop\Corteva Project\remaster\Testing Folder'
+weather_dirc = r'C:\Users\...\Desktop\Corteva Project\remaster....'
+yield_dirc = r'C:\Users\...\Desktop\Corteva Project\remaster...'
 # Creating Database Model/Schema
 
 def create_schema(database_name):
