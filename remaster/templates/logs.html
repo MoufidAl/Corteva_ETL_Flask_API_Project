@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs Data</title>
+</head>
+<body>
+    <h1>Logs Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Starting Time</th>
+                <th>Ending Time</th>
+                <th>Records Ingested</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in logs_data %}
+            <tr>
+                <td>{{ record.file_name }}</td>
+                <td>{{ record.start_time }}</td>
+                <td>{{ record.end_time}}</td>
+                <td>{{ record.records_ingested}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

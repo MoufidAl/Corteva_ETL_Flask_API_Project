@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Data</title>
+</head>
+<body>
+    <h1>Statistics Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Station Year ID</th>
+                <th>Weather Station ID</th>
+                <th>Year</th>
+                <th>Average Max Temp</th>
+                <th>Average Min Temp</th>
+                <th>Total Precipitation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in stats_data %}
+            <tr>
+                <td>{{ record.station_year_id }}</td>
+                <td>{{ record.weather_station_id }}</td>
+                <td>{{ record.year}}</td>
+                <td>{{ record.avg_max_temp}}</td>
+                <td>{{ record.avg_min_temp}}</td>
+                <td>{{ record.total_precipitation}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

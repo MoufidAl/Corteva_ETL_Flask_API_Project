@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+</head>
+<body>
+    <h1>Weather Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Record ID</th>
+                <th>Date</th>
+                <th>Weather Station ID</th>
+                <th>Max Temp</th>
+                <th>Min Temp</th>
+                <th>Precipitation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in weather_data %}
+            <tr>
+                <td>{{ record.record_id }}</td>
+                <td>{{ record.date }}</td>
+                <td>{{ record.weather_station_id }}</td>
+                <td>{{ record.max_temp }}</td>
+                <td>{{ record.min_temp }}</td>
+                <td>{{ record.precp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
