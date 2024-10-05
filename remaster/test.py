@@ -5,7 +5,7 @@ import numpy as np
 import time
 
 
-file_directory = r'C:\Users\moufi\Desktop\Corteva Project\remaster\Testing Folder'
+file_directory = r'C:\Users\...\Desktop\Corteva Project\remaster\Testing Folder'
 
 file_names = os.listdir(file_directory)
 
